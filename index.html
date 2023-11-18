@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="content">
+      <h1 class="content__title">Learn to code by watching others</h1>
+      <p class="content__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </section>
+    <section class="form-content">
+      <div class="promotion">
+        <p class="promotion__text"><span class="promotion__text-color">Try iy free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <form action="" class="form" data-form>
+        <div class="fields-container" id="form__firstName">
+          <input type="text" class="input" name="firstName" data-input>
+          <label for="firstName" class="placeholder" data-label>First Name</label>
+          <img class="icon-error" src="./images/icon-error.svg" alt="icono de error" data-icon>
+          <p class="error-message" data-message>First Name cannot be empty</p>
+        </div>
+        <div class="fields-container" id="form__lastName">
+          <input type="text" class="input" name="lastName" data-input>
+          <label for="lastName" class="placeholder" data-label>Last Name</label>
+          <img class="icon-error" src="./images/icon-error.svg" alt="icono de error" data-icon>
+          <p class="error-message" data-message>Last Name cannot be empty</p>
+        </div>
+        <div class="fields-container" id="form__email">
+          <input type="email" class="input" name="email" data-input>
+          <label for="email" class="placeholder" data-label>Email Address</label>
+          <p class="error-email">Email Address</p>
+          <img class="icon-error" src="./images/icon-error.svg" alt="icono de error" data-icon>
+          <p class="error-message" data-message>Looks like this is not an email</p>
+        </div>
+        <div class="fields-container" id="form__password">
+          <input type="password" class="input" name="password" data-input>
+          <label for="password" class="placeholder" data-label>Password</label>
+          <img class="icon-error" src="./images/icon-error.svg" alt="icono de error" data-icon>
+          <p class="error-message" data-message>Password cannot be empty</p>
+        </div>
+        <button type="submit" class="form__btn" data-btn>Claim your free trial</button>
+        <p class="form__terms">By clicking the button, you are agreeing to our <span class="form__terms-color">Terms and Services</span></p>
+      </form>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

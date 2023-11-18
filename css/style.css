@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 70px 20px;
+    background-image: url("../images/bg-intro-mobile.png");
+    background-color: rgb(255, 122, 122);
+}
+
+.content {
+    margin-bottom: 50px; 
+}
+
+.content__title {
+    text-align: center;
+    margin: 0 0 10px 0;
+    color:rgb(255, 255, 255);
+}
+
+.content__text {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(96, 85, 165);
+    box-shadow: 0 8px 1px rgba(62, 60, 73, 0.301);
+    cursor: pointer;
+}
+
+.promotion__text {
+    text-align: center;
+    width: 75%;
+    margin: 0;
+    color: rgb(185, 182, 211);
+}
+
+.promotion__text-color {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.form {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 7px 1px rgba(62, 60, 73, 0.301);
+}
+
+.fields-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid rgba(62, 60, 73, 0.219);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-error {
+    border: 1px solid rgb(255, 122, 122);
+}
+
+.input:focus {
+    color: rgb(62, 60, 73);
+    font-weight: 700;
+    border: 1px solid rgb(96, 85, 165);
+}
+
+.placeholder {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    font-size: 13px;
+    color: rgba(62, 60, 73, 0.808);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.placeholder-active {
+    display: none;
+}
+
+.error-email {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-size: 13px;
+    color: rgb(255, 122, 122);
+    margin: 13px 0;
+}
+
+.icon-error {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.error-message {
+    display: none;
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(255, 122, 122);
+    margin: 5px 0 0 0;
+}
+
+.active {
+    display: block;
+}
+
+.form__btn {
+    width: 100%;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgb(56, 204, 140);
+    cursor: pointer;
+    box-shadow: 0 4px 1px rgb(50, 180, 124);
+}
+
+.form__btn:hover {
+    background-color: rgb(95, 214, 163);
+}
+
+.form__terms {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+    color: rgb(185, 182, 211)
+}
+
+.form__terms-color {
+    color: rgb(255, 122, 122);
+    font-weight: 700;
+}
+
+.f {
+    color: rgb(255, 122, 122);
+    color: rgb(56, 204, 140);
+    color: rgb(96, 85, 165);
+    color: rgb(62, 60, 73);
+    color: rgb(185, 182, 211);
+}
+
+@media screen and (min-width: 480px) {
+    .main {
+        padding: 70px 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 70px 70px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .form-content {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        flex-direction: row;
+        padding: 80px 90px;
+        background-image: url("../images/bg-intro-desktop.png")
+    }
+
+    .content {
+        width: 72%;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .content__title {
+        text-align: left;
+        font-size: 46px;
+        width: 400px;
+    }
+
+    .content__text {
+        text-align: left;
+        width: 568px;
+    }
+
+    .form-content {
+        width: 80%;
+        margin-left: 30px;
+    }
+}

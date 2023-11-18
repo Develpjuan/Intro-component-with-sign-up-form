@@ -1,0 +1,1 @@
+Componente de introducción con formulario de registro
